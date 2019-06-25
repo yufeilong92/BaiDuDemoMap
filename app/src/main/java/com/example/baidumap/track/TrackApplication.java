@@ -21,6 +21,7 @@ import com.baidu.trace.api.track.OnTrackListener;
 import com.baidu.trace.model.BaseRequest;
 import com.baidu.trace.model.OnCustomAttributeListener;
 import com.baidu.trace.model.ProcessOption;
+import com.example.baidumap.Main2Activity;
 import com.example.baidumap.R;
 import com.example.baidumap.track.activity.*;
 import com.example.baidumap.track.model.ItemInfo;
@@ -162,12 +163,14 @@ public class TrackApplication extends Application {
         ItemInfo cacheManage = new ItemInfo(R.mipmap.icon_cache_manage,
                 R.string.cache_manage_title, R.string.cache_manage_desc, CacheManageActivity.class);
         ItemInfo faq = new ItemInfo(R.mipmap.icon_fag, R.string.fag_title, R.string.faq_desc, FAQActivity.class);
+        ItemInfo main2 = new ItemInfo(R.mipmap.icon_fag, R.string.main_title, R.string.main_content, Main2Activity.class);
         itemInfos.add(tracing);
         itemInfos.add(trackQuery);
         itemInfos.add(fence);
         itemInfos.add(bos);
         itemInfos.add(cacheManage);
         itemInfos.add(faq);
+        itemInfos.add(main2);
 
         getScreenSize();
     }

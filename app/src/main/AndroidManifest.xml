@@ -25,13 +25,15 @@
             android:label="@string/app_name"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Main2Activity">
+        </activity>
 
         <meta-data
                 android:name="com.baidu.lbsapi.API_KEY"
                 android:value="GGwdkTGzNlwQfUoH3UDU9H3T6KmePxG2"/>
-
-        <meta-data android:name="android.max_aspect"
-                   android:value="2.1"/>
+        <meta-data
+                android:name="android.max_aspect"
+                android:value="2.1"/>
 
         <activity
                 android:name=".track.activity.SplashActivity"
@@ -43,35 +45,41 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".track.activity.MainActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".track.activity.TracingActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".track.activity.TrackQueryActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".track.activity.FenceActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".track.activity.BosActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".track.activity.CacheManageActivity"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".track.activity.FAQActivity"
-                  android:screenOrientation="portrait"/>
+        <activity
+                android:name=".track.activity.MainActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".track.activity.TracingActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".track.activity.TrackQueryActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".track.activity.FenceActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".track.activity.BosActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".track.activity.CacheManageActivity"
+                android:screenOrientation="portrait"/>
+        <activity
+                android:name=".track.activity.FAQActivity"
+                android:screenOrientation="portrait"/>
         <activity
                 android:name=".track.activity.TracingOptionsActivity"
-                android:theme="@style/AppBaseTheme"
-                android:screenOrientation="portrait"/>
+                android:screenOrientation="portrait"
+                android:theme="@style/AppBaseTheme"/>
         <activity
                 android:name=".track.activity.TrackQueryOptionsActivity"
-                android:theme="@style/AppBaseTheme"
-                android:screenOrientation="portrait"/>
+                android:screenOrientation="portrait"
+                android:theme="@style/AppBaseTheme"/>
 
         <service
                 android:name="com.baidu.trace.LBSTraceService"
                 android:enabled="true"
                 android:exported="true"
-                android:process=":remote"
-        />
+                android:process=":remote"/>
     </application>
 
 </manifest>
